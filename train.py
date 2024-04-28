@@ -81,6 +81,8 @@ def get_data(dataset_name, model_name):
         paths = 'preprocess/outputs/ace2005'
     elif dataset_name == 'genia':
         paths = 'preprocess/outputs/genia'
+    elif dataset_name == 'nerel':
+        paths = 'preprocess/outputs/genia'
     else:
         raise RuntimeError("Does not support.")
     pipe = SpanNerPipe(model_name=model_name)
